@@ -2,3 +2,8 @@
     width: 300px;
     height: auto;
 }
+
+/*NAV*/
+#navbarNavDropdown {
+    justify-content: space-around;
+}
