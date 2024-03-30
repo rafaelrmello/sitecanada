@@ -8,6 +8,15 @@
     justify-content: space-around;
 }
 
+
+#alerta {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
 /*Footer*/
 #copyright {
     text-decoration: none;
