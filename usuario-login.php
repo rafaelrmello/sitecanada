@@ -17,30 +17,18 @@ $resultado->bindParam(':passwd', $senha);
 $resultado->execute();
 
 $linha = $resultado->fetch();
-$usuario_logado = $linha['usuario'];
-$permissao = $linha ['permisao'];
+$usuario_logado = $linha['email'];
 
-
-
-
-if ($permissao == 'adm'){
 	if ($usuario_logado == null) {
 		// Usuário ou senha inválida
 		header('Location: usuario-erro.php');
-	} 
-	else {
+	} else {
 		session_start();
 		$_SESSION['usuario_logado'] = $usuario_logado;
-		header('Location: index_adm.php');
+		header('Location: adm.php');
+		exit();
 	}
-} else {
-	if ($usuario_logado == null) {
-		// Usuário ou senha inválida
-		header('Location: usuario-erro.php');
-	} 
-	else {
-		session_start();
-		$_SESSION['usuario_logado'] = $usuario_logado;
-		header('Location: index_usu.php');
-	}
-}
+
+
+?>
+
