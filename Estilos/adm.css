@@ -1,0 +1,117 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #942e2b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.admin-section,
+.suggestions-section {
+    margin-top: 20px;
+}
+
+.main-content {
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%; /* Define a largura para 100% para ocupar toda a largura da form-container */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Tamanho fixo da tabela */
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9534f; /* Vermelho */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cinza claro para linhas pares */
+}
+
+.botao {
+    text-decoration: none;
+    color: white;
+    background-color: #d9534f; /* Vermelho para botões */
+    padding: 8px 12px;
+}
+
+.botaoatualizar {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 228);
+    padding: 8px 12px;
+}
+
+#acoes{
+    width: 20%;
+}
+
+#cat{
+    width: 15%;
+}
+
+#postar{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(43, 141, 30); /* Vermelho para botões */
+    padding: 8px 12px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b20000;
+}
