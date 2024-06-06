@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sobre o Canada</title>
+    <title>Comentários</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css_index.css">
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!--Header-->  
-        <div class="container-fluid">
+    <!--Header-->  
+    <div class="container-fluid">
           <div class="row">
             <div class="col-sm-3">
               <a href="https://www.canada.ca/en.html" target="_blank"><img src="img/bandeiracanada.png" id="bandeiracanada"></a>
@@ -80,7 +80,6 @@
             </div>
           </div>
 
-
         <div class="row">
           <div class="col=xs-12">
             <div class="alert alert-success" role="alert" id="alerta">
@@ -89,93 +88,19 @@
           </div>
         </div>
       
+      
 
 
-        <div class="row">
-            <div class="col-sm-12">
-              <div class="card mb-3" style="max-width: auto;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="img/hospitalcanada.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><h2>Hospitalidade e Segurança</h2></h5>
-                      <p class="card-text">Além de sua beleza natural e cultural, o Canadá também é conhecido por sua hospitalidade e segurança. Os canadenses são famosos por sua simpatia, cordialidade e tolerância, tornando sua estadia no país ainda mais agradável. Além disso, o Canadá é um dos países mais seguros do mundo, oferecendo paz de espírito aos visitantes durante toda a viagem.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card mb-3" style="max-width: auto;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="img/diversidade-cultural-canada.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><h2>Diversidade Cultural e Festivais</h2></h5>
-                      <p class="card-text">O Canadá é conhecido por sua diversidade cultural, com uma população que abraça uma variedade de origens étnicas, religiosas e culturais. Essa diversidade se reflete na vida cotidiana do país, tornando-o um lugar vibrante e acolhedor para visitantes de todo o mundo.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card mb-3" style="max-width: auto;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="img/exploreocanada.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><h2>Explore o Canadá e Crie Memórias Inesquecíveis</h2></h5>
-                      <p class="card-text">Não importa se você está em busca de aventuras ao ar livre, experiências culturais ou simplesmente quer relaxar em meio à natureza, o Canadá tem tudo a oferecer. Explore suas belezas naturais, mergulhe em sua rica cultura e crie memórias inesquecíveis neste destino extraordinário. Venha descobrir a magia do Canadá e deixe-se encantar por tudo o que este país incrível tem a oferecer!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-       
-
-        
 
 
-     
 
 
-        <!--Barra de progressão-->
-        <br>
-        <br>
-        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 68%"></div>
-        </div>
-        <br>
 
-        <!--Page Navigation-->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link" href="sobreocanada.html">Página anterior</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="sobreocanada.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="sobreocanada2.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="sobreocanada3.html">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="sobreocanada3.html">Próxima página</a>
-            </li>
-          </ul>
-        </nav>
-       <br>
+
+
+
+
+
 
         <!-- Footer -->
         <footer class="bg-body-tertiary text-center">

@@ -1,7 +1,6 @@
 <?php
 $email = $_POST['email'];
-$senhaLimpa = $_POST['senha'];
-$senha = hash("sha256", $senhaLimpa);
+$senha = hash("sha256", $_POST['senha']);
 
 $sql = "SELECT * FROM usuario
         WHERE email = :user
