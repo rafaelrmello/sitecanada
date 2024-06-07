@@ -1,3 +1,9 @@
+<?php
+    require_once "classes/Comentario.php";
+    $comentario=new Comentario();
+    $lista=$comentario->listar();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,22 +38,21 @@
             <tr>
                 <th>E-mail</th>
                 <th>Comentário</th>
+                <th id="acoes">Ações</th>
             </tr>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <?php foreach ($lista as $linha):?>
+            <tr>
+                <td><?php echo $linha['email']?></td>
+                <td><?php echo $linha['comentario']?></td>
+                <td>
+                    <button id="postar"><a href="comentario-aprovar.php?id=<?=$linha['id']?>">Aprovar</a></button>
+                    <button class="botao"><a href="comentario-excluir.php?id=<?=$linha['id']?>">Excluir</a></button>
+                </td>
+            </tr>
+            <?php endforeach ?>
         </table>
     </div>
 </body>

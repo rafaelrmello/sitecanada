@@ -15,4 +15,23 @@ class Comentario{
     echo "Registro gravado com sucesso!";
     }
 
+
+    public function listar(){
+        $sql="SELECT email, comentario FROM comentario";
+
+        include "classes/conexao.php";
+
+        $resultado=$conexao->query($sql);
+
+        $lista=$resultado->fetchAll();
+
+        return $lista;
+    }
+
+    public function excluir(){
+        $sql="DELETE FROM comentario WHERE id=".$this->id;
+        include "classes/conexao.php";
+        $conexao->exec($sql);
+    }
+
 }
