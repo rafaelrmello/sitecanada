@@ -31,17 +31,19 @@
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail.</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentário.</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-                      </div>
-                      <div class="mb-3">
-                        <input type="submit" value="Enviar" id="botaoenviar">
-                      </div>
+                      <form action="comentario-gravar.php" method="post">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Endereço de e-mail.</label>
+                          <input type="email" id="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Comentário.</label>
+                          <textarea class="form-control" id="comentario" name="comentario"  id="exampleFormControlTextarea1" rows="10"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <input type="submit" value="Enviar" id="botaoenviar">
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </ul>
