@@ -47,12 +47,30 @@ class Comentario{
         return $lista;
     }
 
+
+    public function listarAprovados(){
+        $sql="SELECT ID_Comentario, email, comentario, status FROM comentario WHERE status = 2";
+
+        include "classes/conexao.php";
+
+        $resultado=$conexao->query($sql);
+
+        $lista=$resultado->fetchAll();
+
+        return $lista;
+    }
+
+
     public function excluir(){
         $sql="DELETE FROM comentario WHERE ID_Comentario=".$this->id;
         include "classes/conexao.php";
         $conexao->exec($sql);
     }
 
-
+    public function aprovar() {
+        $sql = "UPDATE comentario SET status = 2 WHERE ID_Comentario=" . $this->id;
+        include "classes/conexao.php";
+        $conexao->exec($sql);
+    }
 
 }
