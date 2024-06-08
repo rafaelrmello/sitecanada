@@ -1,3 +1,9 @@
+<?php
+    require_once "classes/Comentario.php";
+    $comentario=new Comentario();
+    $lista=$comentario->listarAprovados();
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -89,20 +95,32 @@
             </div>
           </div>
         </div>
-      
-      
 
 
 
+      <!--Conteú<do-->
+      <div class="container">
+        <div class="row">
+            <?php $contador = 0; ?>
+            <?php foreach ($lista as $linha): ?>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $linha['email']; ?></h5>
+                            <p class="card-text"><?php echo $linha['comentario']; ?></p>
+                        </div>
+                    </div>
+                </div>
 
+                <?php $contador++; ?>
+                <?php if ($contador % 3 == 0): ?>
+                  </div><br><div class="row">
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
+      <br>
 
         <!-- Footer -->
         <footer class="bg-body-tertiary text-center">
