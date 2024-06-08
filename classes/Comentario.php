@@ -13,7 +13,6 @@ class Comentario{
         }
 	}
 
-
     public function carregar(){
         $sql="SELECT * FROM comentario WHERE ID_Comentario=".$this->id;
         include "classes/conexao.php";
@@ -34,7 +33,6 @@ class Comentario{
     echo "Registro gravado com sucesso!";
     }
 
-
     public function listar(){
         $sql="SELECT ID_Comentario, email, comentario, status FROM comentario WHERE status = 1";
 
@@ -46,7 +44,6 @@ class Comentario{
 
         return $lista;
     }
-
 
     public function listarAprovados(){
         $sql="SELECT ID_Comentario, email, comentario, status FROM comentario WHERE status = 2";
@@ -60,7 +57,6 @@ class Comentario{
         return $lista;
     }
 
-
     public function excluir(){
         $sql="DELETE FROM comentario WHERE ID_Comentario=".$this->id;
         include "classes/conexao.php";
@@ -73,4 +69,13 @@ class Comentario{
         $conexao->exec($sql);
     }
 
+    public function atualizar(){
+        $sql="UPDATE comentario SET
+                email='{$this->email}',
+                comentario='{$this->comentario}'  
+            WHERE ID_Comentario={$this->id}";
+        
+        include "Classes/conexao.php";
+        $conexao->exec($sql);
+    }
 }

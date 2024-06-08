@@ -47,7 +47,7 @@
                 <td><?php echo $linha['comentario']?></td>
 
                 <td>
-                    <button class="botaoatualizar"><a href="perguntas-editar.php?id=<?=$linha['ID_Comentario']?>">Atualizar</a></button>
+                    <button class="botaoatualizar"><a href="comentarios-editar.php?id=<?=$linha['ID_Comentario']?>">Atualizar</a></button>
                     <button class="botao"><a href="comentarioaprovado-excluir.php?id=<?=$linha['ID_Comentario']?>">Excluir</a></button>
                 </td>
             </tr>
