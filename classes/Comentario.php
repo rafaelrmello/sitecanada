@@ -4,10 +4,29 @@ class Comentario{
     public $email;
     public $comentario;
 
+
+    public function __construct($id = false)
+	{
+		if ($id){
+            $this->id = $id;                
+            $this->carregar();
+        }
+	}
+
+
+    public function carregar(){
+        $sql="SELECT * FROM comentario WHERE ID_Comentario=".$this->id;
+        include "classes/conexao.php";
+        $resultado= $conexao->query($sql);
+        $linha=$resultado->fetch(); 
+
+        $this->id=$linha['ID_Comentario'];
+        $this->email=$linha['email'];
+        $this->comentario=$linha['comentario'];
+    }
     
     public function comentarioinserir(){
-        $sql="INSERT INTO comentario VALUES ('{$this->id}',
-        '{$this->email}', '{$this->comentario}')";
+        $sql="INSERT INTO comentario (email, comentario) VALUES ('{$this->email}', '{$this->comentario}')";
 
         
     include "Classes/conexao.php";
@@ -17,7 +36,7 @@ class Comentario{
 
 
     public function listar(){
-        $sql="SELECT email, comentario FROM comentario";
+        $sql="SELECT ID_Comentario, email, comentario, status FROM comentario WHERE status = 1";
 
         include "classes/conexao.php";
 
@@ -29,9 +48,11 @@ class Comentario{
     }
 
     public function excluir(){
-        $sql="DELETE FROM comentario WHERE id=".$this->id;
+        $sql="DELETE FROM comentario WHERE ID_Comentario=".$this->id;
         include "classes/conexao.php";
         $conexao->exec($sql);
     }
+
+
 
 }
