@@ -2,7 +2,7 @@
 try {
     $usuario = $_POST ["usuario"];
     $email = $_POST ["email"];
-    $senha = hash ("sha256", $_POST["senha"]);
+    $senha = hash("sha256", $_POST["senha"]);
 
 
     $sql = "INSERT INTO usuario (usuario, email, senha) VALUES ('{$usuario}', '{$email}', '{$senha}')";

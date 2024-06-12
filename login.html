@@ -77,24 +77,28 @@
       <div class="rowtelalogin">
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-sm-6 col-md-4">
-            <form action="usuario-login.php" method="post">
+            <form action="usuario-login.php" method="POST">
                 <h2>Tela de Login</h2>
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                <input type="email" name="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  <label for="usuario">Usuário</label>
+                  <input type="text" id="usuario" name="usuario" class="form-control">
+                 </div>
                 <div class="mb-3">
-                <br>
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" name="senha" class="form-control" id="exampleInputPassword1" required>
-                <button type="submit" id="botaologin" class="btn btn-primary">Entrar</button>
+                  <br>
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" name="senha" class="form-control">
                 </div>
+
+                <button type="submit" id="botaologin" class="btn btn-primary">Entrar</button>
                 <br>
-                <a href="cadastro.html" id="botaocadastrese">Não possui uma conta? Clique aqui e cadastre-se!</a>
             </form>
+            <br>
+            <a href="cadastro.html" id="botaocadastrese">Não possui uma conta? Clique aqui e cadastre-se!</a>
           </div>
         </div>
       </div>
       <br><br>
+
  
     
            <!-- Footer -->

@@ -1,26 +1,31 @@
 <?php
-$email = $_POST['email'];
-$senha = hash("sha256", $_POST['senha']);
+$usuario = $_POST['usuario'];
+$senhaLimpa = $_POST['senha'];
+$senha = hash("sha256", $senhaLimpa);
 
-$sql = "SELECT * FROM usuario WHERE email = :user AND senha = :passwd";
-
+$sql = "SELECT * FROM usuario WHERE
+		usuario = :user AND senha = :passwd ";
 
 include "classes/conexao.php";
 
 $resultado = $conexao->prepare($sql);
-$resultado->bindParam(':user', $email);
+$resultado->bindParam(':user', $usuario);
 $resultado->bindParam(':passwd', $senha);
 $resultado->execute();
 
-$linha = $resultado->fetch(PDO::FETCH_ASSOC);
-$usuario_logado = $linha['email'];
+$linha = $resultado->fetch();
+$usuario_logado = $linha['usuario'];
 
-if ($linha === false) {
-	// Usuário ou senha inválida
-	header('Location: usuario-erro.php');
-} else {
-	session_start();
-	$_SESSION['usuario_logado'] = $linha['email'];
-	header('Location: adm.php');
-}
+	if ($usuario_logado != null) {
+		session_start();
+		$_SESSION['usuario_logado'] = $usuario_logado;
+		header('Location: adm.php');
+		exit();
+	}
+	
+	else {
+		header('Location: usuario-erro.php');
+		echo ($usuario_logado);
+		exit();
+	}
 ?>
