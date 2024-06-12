@@ -28,4 +28,3 @@ $usuario_logado = $linha['usuario'];
 		echo ($usuario_logado);
 		exit();
 	}
-?>
