@@ -3,7 +3,7 @@ Projeto Volta ao Mundo
 Objetivo do Projeto:
 O objetivo deste projeto foi criar um site que fornecesse informações detalhadas sobre o Canadá, destacando lugares turísticos e pontos de interesse para visitação e exploração. O projeto é desenvolvido para fins de aprendizagem acadêmica, incorporando o framework Bootstrap.
 
-Funcionalidades do Site:
+Funcionalidades do site:
 
 Informações sobre o Canadá:
 Lugares para Visitar: Páginas detalhadas sobre diversas atrações turísticas.

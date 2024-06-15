@@ -24,10 +24,13 @@
         <div class="suggestions-section">
             <h2><a href="comentarios-aprovadas.php">Comentários Aprovados</a><br><br></h2>
         </div>
+
         <div class="suggestions-section">
             <h2><a href="index.html">Sair</a><br><br></h2>
         </div>
     </div>
+    
+    
 
     <div class="main-content">
         <div class="header">
@@ -56,3 +59,4 @@
     </div>
 </body>
 </html>
+
